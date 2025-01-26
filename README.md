@@ -29,3 +29,13 @@ este video explica de manera rápida, pero clara como se programa una ruleta con
 #### 2. https://www.scj.cl/funcionamiento-de-los-juegos/juegos-de-ruleta#:~:text=La%20ruleta%20es%20un%20juego,rueda%20horizontal%20giratoria%2C%20denominada%20ruleta.
 	
 esta página web nos ayudó a comprender el funcionamiento de diversos tipos de ruletas, y así basarnos en una en específico para la realización de mi código (la ruleta europea).
+
+#### 3. https://www.youtube.com/watch?v=jJyKET9ZVdE
+
+este video nos sirvio para aprender a usar las palabras reservadas try, except y finally, las cuales nos funcionaron para que a la hora de ingresar en el input un dato diferente a un entero o al el dato que se solicite en el input, no nos de un error, si no que en cambio nos de un print indicando que el valor ingresado es invalido o algo por el estilo.
+
+## 3. Metodología
+### ¿Qué métodos utilizamos para desarrollar el proyecto?
+para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal de la ruleta y cual seria, determinando de forma unanime que lo mejor era hacer una ruleta de casino. Seguido a esto se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. 
+
+
