@@ -36,6 +36,8 @@ este video nos sirvio para aprender a usar las palabras reservadas try, except y
 
 ## 3. Metodología
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
-para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal de la ruleta y cual seria, determinando de forma unanime que lo mejor era hacer una ruleta de casino. Seguido a esto se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. 
+para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal de la ruleta y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
+
+Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder  
 
 
