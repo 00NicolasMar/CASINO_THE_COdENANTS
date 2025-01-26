@@ -37,7 +37,7 @@ este video nos sirvio para aprender a usar las palabras reservadas try, except y
 
 ## 3. Metodología
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
-para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal de la ruleta y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
+para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal del casino y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
 
 Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder desarrollar el codigo de la ruleta asi como un repaso a los temas vistos en clase. Cabe aclarar que siempre es util plantear que es lo que queremos hacer y un paso a paso de la realizacion del codigo, ya que a la hora de "traducirlo" a python siempre sera mas sencillo, ya que nos ahorrariamos bastante tiempo probando a ver que es lo que funciona, y no improvisariamos a la hora de ralizar el codigo.
 
