@@ -1,7 +1,7 @@
 # CASINO_THE_COdENANTS
 ## 1. Introducción y Contexto
-### ¿Cuál es el problema que aborda este proyecto?
-El proyecto es un casino virtual el cual cuenta con dos juegos disponibles, uno llamado Royale Roulette y Magic Dice. El primero es una ruleta la cual consatara de 37 numeros del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo elo unico numero color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de apuesta, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
+### ¿Cuál es el proyecto?
+El proyecto es un casino virtual tematizado en Halo el cual contara con varios juegos disponibles, uno llamado SpartanRoulette y otros juegos.... Este primero es una ruleta la cual consatara de 37 numeros del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo elo unico numero color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de apuesta, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
 #### Escoger color
 ##### -Los colores rojo y negro generan una ganancia del *2 del dinero apostado
 ##### -El color Verde genera una ganancia del *50 siendo este el premio mayor de la ruleta 
@@ -10,16 +10,17 @@ El proyecto es un casino virtual el cual cuenta con dos juegos disponibles, uno 
 #### Par o Impar
 ##### -Si se acierta que es par o impar, la ganancia será de *1.5 del valor apostado
 El hecho de que existan estas opciones de apuesta no implica que sea necesario seleccionarlas todas, por lo que si no desea ingresar en su apuesta algunas de las anteriores opciones, puede expresar “ninguno”, lo que indicará que no se apostara en tal apartado. (debe seleccionar al menos 1 de las opciones de apuesta, o si no no se hará efectiva la apuesta).
+###### se van a agregar mas opciones de apuestas. 
 ### ¿Qué nos motivó a elegir este tema?
-Realmente nunca hubo un interés en particular por los juegos de azar, simplemente nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta o dados mágicos. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
+Realmente nunca hubo un interés en particular por los juegos de azar, simplemente nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
 Veámoslo de la siguiente manera, en una ruleta de casino convencional se cuentan con 37 números, por lo tanto según el casino oddschecker la posibilidad de acertar dicho número es básicamente de un  2,70% contra un 97,30 de perder, pero en cuanto apuestas relacionadas con un conjunto específico de números (color o paridad) la posibilidad en cada caso es de ganar es de 48.6%.
 Visto de esta manera no está tan mal… ya que al apostar por un color tienes una posibilidad de ganar del 50% lo que significa duplicar tu dinero, o no?
 
 ### ¿Cuál es el objetivo principal del proyecto?
-Presentar el funcionamiento de los juegos de azar virtuales como lo son el casino o los dados mágicos.
+Presentar el funcionamiento de los juegos de azar virtuales como lo son la ruleta, y demas juegos que se pueden encontrar en este entorno. asi como desarrollar un programa que permita jugarlos y replicar algunos juegos de casino con el fin de generar un interes en los jugadores (no fomentamos la ludopatia, simplemente es una simulacion).  
 
 ## 2. Marco Teórico
-### ¿Qué autores o fuentes sirvieron de referencia principal?
+### ¿Que fuentes utilizamos para la realizacion?
 Para la realización del juego de la ruleta de casino, utilizamos como referencia y guia de desarrollo, los siguientes videos y paginas web.
 
 #### 1. https://www.youtube.com/watch?v=SfcR7GXEd6Y
@@ -38,6 +39,71 @@ este video nos sirvio para aprender a usar las palabras reservadas try, except y
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
 para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal de la ruleta y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
 
-Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder  
+Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder desarrollar el codigo de la ruleta asi como un repaso a los temas vistos en clase. Cabe aclarar que siempre es util plantear que es lo que queremos hacer y un paso a paso de la realizacion del codigo, ya que a la hora de "traducirlo" a python siempre sera mas sencillo, ya que nos ahorrariamos bastante tiempo probando a ver que es lo que funciona, y no improvisariamos a la hora de ralizar el codigo.
+
+### ¿Qué herramientas o recursos se emplearon en el desarrollo?
+
+Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.google/ ya que esta nos brinda una facilidades a la hora de escribir y probar el codigo de manera sencilla, facilidades como lo son:
+
+- Acceso a GPU / TPU.
+- Compartir código gracias a la programación colaborativa.
+- Visualizaciones gráficas sencillas.
+  
+##### (cabe recalcar que se desactivo la sistencia de IA). 
+
+![image](https://github.com/user-attachments/assets/32a16a0d-fc05-4a57-ba8c-46bfcdb4d32b)
+
+
+ Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
+
+## 4. Mejoras
+### ¿qué mejoras del proyecto tenemos planeadas para la entrega final?
+
+primero que nada, lo que queremos hacer es por lo menos 3 juegos que nos amplien y agreguen complejidad al codigo, ya que si bien el actual no es muy corto que digamos si es necesario aumentar un poco su complejidad.
+Por lo que queremos saber que otros juegos de casino estarian bien para añadir al casino. (maximo dos). por lo que nos seria de gran ayuda que ingresaran al siguiente forms y seleccionaran dos juegos.
+"link de forms"
+
+En cuanto al codigo de la ruleta, queremos implementar mas opciones de apuestas, como lo son las docenas, columnas y el conjunto de numeros. Ya que queremos que la ruleta tenga variedad de opciones de apuestas, y hacer un poco mas interesante el juego.
+	![image](https://github.com/user-attachments/assets/870a8910-ae58-41fc-8c51-b88486db2f0d)
+
+###### Eso sí mantenemos que con almenos el fallo de una de las condiciones de apuesta, perderas todo tu dinero, pero... no pasa nada, es dinero falso, podras seguir apostando.  
+
+## 5. Preguntas Técnicas
+### ¿Cómo funciona el programa?
+##### A continuacion haremos una explicacion paso a paso del codigo, para que el entendimiento de su funcionamiento sea claro.
+#### - Import y Definir funcion principal
+
+```pseudocode
+import random
+import time
+
+def casino():
+
+        print("Bienvenido al Casino The CoDenants")
+```
+En esta primera parte del codigo, se hizo un import de random que va a ser util para la seleccion del numero ganador de la ruleta, y el import time que va a ser el encargado de simular un giro de ruleta.
+Tambien se definio la funcion principal del programa que fue llamada Casino, haciendo asi la primera impresion del codigo, la cual sera la bienvenida al casino.
+#### - Ingreso de monto de apuesta
+
+```pseudocode
+ dinero = float(input("Ingresa la cantidad de dinero con la cual quieres jugar: "))
+        if dinero <= 0:
+            print("La cantidad apostada debe ser mayor a 0.")
+```
+En este apoartado se realiza el ingreso del monto el cual va a apostar el jugador, utilizando el condicional `if` se establece que si se ingresa un valor menor a 0 no puede jugar, ya que no es valido el monto.
+#### - Seleccion de juego.
+
+```pseudocode
+ juegos = input("Selecciona el juego que deseas jugar: 'Casino' o 'nose': ")
+        while True:
+          if juegos == "casino":
+```
+¿Qué limitaciones técnicas encontraste y cómo las superaste?
+
+
+
+
+
+
 
 
