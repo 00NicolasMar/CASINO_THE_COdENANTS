@@ -99,8 +99,141 @@ En este apoartado se realiza el ingreso del monto el cual va a apostar el jugado
           if juegos == "ruleta":
 ```
 En este apartado se realiza la seleccion de el juego que desea jugar (actualmente solo esta disponible la ruleta). luego un bucle while el cual dera util a la hora de finalizar el juego de la ruleta permitiendo que el jugador pueda volver a apotar en el mismo juego, y se establece el inicio del juego (ruleta) si se selecciona dicha opcion. 
+#### - Apuestas a color y pareidad
+
+```pseudocode
+            color_apuesta = input("Escoge un color entre rojo, negro, verde o ninguno: ")
+            if color_apuesta  not in ["rojo", "negro", "verde", "ninguno"]:
+                print("Ese color no está en la ruleta. Por favor, elige entre 'rojo', 'negro', 'verde' o 'ninguno'.")
+
+            numero_par = input("Selecciona si tu número será 'par', 'impar' o 'ninguno': ")
+            if numero_par not in ["par", "impar", "ninguno"]:
+                print("Opción no válida. Por favor, elige entre 'par', 'impar' o 'ninguno'.")
+```
+En estas lineas se establecen dos apuestas que se pueden realizar en el casino, como lo son la seleccion de color y de propiedad par de el numer, utilizando condicional if, indicando que si seleccionas algo diferente a las opciones dadas, no puedes continuar tu apuesta.
+#### - Apuesta a Numero especifico
+
+```pseudocode
+numero_elegido = input("Escoge un número entre 0 y 36 o escribe ninguno: ")
+            if numero_elegido != "ninguno":
+                try:
+                    numero_elegido = int(numero_elegido)
+                    if numero_elegido < 0 or numero_elegido > 36:
+                        print("El número que escogiste no hace parte de la ruleta. Por favor, elige un número entre 0 y 36.")
+                   
+                except ValueError:
+                    print("Debes ingresar otro numero o escribir ninguno.")
+```
+En este apartado se establece la opcion de escoger un numero que este dentro del rango (0, 36), en el cual si eliges un numero que no se encuentre en el rango, no podras continuar tu apuesta y deberas seleccionar un numero que si este dentro del rango anteriormente mencionado. (aqui se utilizo el try, except para que el codigo no diera error, si no que en vez de eso hiciera una impresion indicando que se debe ingresar otro numero)
+#### - Giro de ruleta
+
+```pseudocode
+	    print("Girando la ruleta...")
+            for _ in range(10):
+              print("Numeros girando: " + str(random.randint(0, 36)), end="\r")
+              time.sleep(0.5)
+              numero_ruleta = random.randint(0, 36)
+```
+Aqui se hace la simulacion del giro de la ruleta, utilizando el `import random` y `import time`, haciendo primero un print que simule el girando la ruleta...., luego estableciendo que haga un conteo de 10 numeros (cado uno durando 0.5seg), y que al final de como resultado el numero seleccionado de manera aleatoria, numero el cual sera el que cayo en la ruleta. (dicho numero estara en el rango 0, 36).
+#### - Establecer color a cada numero
+
+```pseudocode
+	    if numero_ruleta == 0:
+              color_ruleta = "verde"
+            elif numero_ruleta in [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35]:
+              color_ruleta = "negro"
+            else:
+              color_ruleta = "rojo"
+```
+En este apartado se establecen condiciones que determinaran el color a cada numero, el 0 siendo el unico verde, y por medio de una lista establecer que los numeros  [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35] son de color negro, dejando asi a los numero que no sean pertenecientes a la lista anterior ni 0 como numeros rojos.
+#### - Numero Ganador
+
+```pseudocode
+print("La ruleta cayó en el número " + str(numero_ruleta)+ " " + str(color_ruleta))
+```
+Esta linea hace una impresion del numero que cayo en la ruleta y tambien a que color pertenece.
+#### - Apuestas combinadas
+
+```pseudocode
+ganancia = 0
+            condiciones_totales = 0
+            condiciones_acertadas = 0
+```
+Estas lineas son utiles para determinar que si el jugador hizo mas de una apuesta, asegurando que la ganacia corresponda a las apuestas que hizo.
 #### - 
-¿Qué limitaciones técnicas encontraste y cómo las superaste?
+
+```pseudocode
+            if color_apuesta != "ninguno":
+                condiciones_totales += 1
+                if color_apuesta == color_ruleta:
+                    ganancia += dinero * 2
+                    condiciones_acertadas += 1
+                    print("¡Acertaste el color " + str(color_apuesta) + "! Ganaste el doble de tu apuesta.")
+
+            if numero_par != "ninguno":
+                condiciones_totales += 1
+                if numero_par == "par" and numero_ruleta % 2 == 0 and numero_ruleta != 0:
+                    ganancia += dinero * 1.5
+                    condiciones_acertadas += 1
+                    print("¡Acertaste que el número es par! ")
+                elif numero_par == "impar" and numero_ruleta % 2 != 0:
+                    ganancia += dinero * 1.5
+                    condiciones_acertadas += 1
+                    print("¡Acertaste que el número es impar! ")
+
+            if numero_elegido != "ninguno":
+                condiciones_totales += 1
+                if numero_ruleta == numero_elegido:
+                    ganancia += dinero * 5
+                    condiciones_acertadas += 1
+                    print("¡Adivinaste el número exacto" + str(numero_elegido) + "! Ganaste 5 veces tu apuesta.")
+```
+Estas lineas son las encargadas de determinar las ganancias por medio de las condiciones totales y las condiciones ganadas, dando como resultado que si el jugador hizo mas de 1 apuesta cada condicion correspondera a las condiciones que debera acertar para ganar el dinero.
+#### - Determinacion de ganacias
+
+```pseudocode
+            if condiciones_acertadas < condiciones_totales:
+                ganancia = 0
+                print("No acertaste todas las condiciones seleccionadas... Perdiste tu dinero.")
+            else:
+                print("¡Increíble! Acertaste todas las "+ str(condiciones_acertadas) + " condiciones seleccionadas.")
+	    print("Dinero ingresado: $" + str(dinero))
+            print("Ganancia total: $" + str(ganancia))
+```
+En estas lineas se establece que cada apuesta hecha tiene que corresponder a las apuestas acertadas, con el fin de que la ganancia sea acorde a lo que se apostó, y tambien determinando que si de las apuestas que hizo fallo al menos 1, pierde todo su dinero, haciendo una impresion de lo que tenia vs lo que gano o perdio segun sea el caso.
+#### - Seleccion de otro juego 
+
+```pseudocode
+          elif juegos == "nose":
+            print("Aun no, espera que dejemos la ruleta super jajajs")
+          else:
+            print("Opción de juego no válida. Por favor, elige 'ruleta' o 'nose'."
+```
+En estas lineas se establece el caso en el cual el jugador en vez de jugar ruleta selecciona otro juego, o algo diferente a las opciones.
+#### - ¿Deseas continuar jugando? 
+
+```pseudocode
+          jugar_nuevamente = input("¿Quieres jugar nuevamente? sí o no bro..: ")
+          if jugar_nuevamente != "si":
+              print("Gracias por jugar en el Casino The CoDenants. ¡Hasta la próxima!")
+              break
+```
+En estas lineas se cierra por asi decirlo el bucle while, dando una opcion al jugador de si desea continuar jugando o si ya perdio lo suficiente. 
+#### - Cierre
+
+```pseudocode
+if __name__ == "__main__": 
+    casino()
+```
+Una vez dadas las condiciones, se ejecuta el programa.
+
+### ¿Qué problemas hubieron y cómo los solucionamos?
+En el desarrollo del codigo hubieron bastantes inconvenientes a la hora de su realizacion, uno de ellos, para nosotros el mas importante era hacer que si el jugador fallaba alguna de las condiciones que escogio apostar, perdiera todo su dinero, ya que siempre que fallaba una de sus condiciones ganaba igualmente dinero, cosa que si bien es justa, en terminos de caino implica perdidas, y quien dijo que un casino era justo. Por lo que decidimos establecer que cada condicion que seleccionara seria 1 condicion agregada a sus condiciones totales, y si acertaba una, estas significarian 1 unidad a sus condiciones ganadas estableciendo asi que si o si el numero de condiciones totales debia ser igual a el numero de condiciones acertadas.
+
+Otro problema que tuvimos, fue el hecho de que si el jugador ingresaba un numero que no perteneciera al rango (0, 36) nos daba error, cosa que si bien no es critica, corta la experiencia, por lo que teniamos que buscar una solucion al problema (fue un poco dificil porque no sabiamos que funcionaba), para llegar a la solucion con ayuda de un compañero, nos dijo que investigaramos un poco sobre las excepciones, por lo que despues de un ratito viendo un video logramos dar la solucion a dicho "problema".
+
+## 6. Conclusiones
+estas se haran una vez terminado el proyecto jeje
 
 
 
