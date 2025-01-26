@@ -94,10 +94,12 @@ En este apoartado se realiza el ingreso del monto el cual va a apostar el jugado
 #### - Seleccion de juego.
 
 ```pseudocode
- juegos = input("Selecciona el juego que deseas jugar: 'Casino' o 'nose': ")
+ juegos = input("Selecciona el juego que deseas jugar: 'Ruleta' o 'nose': ")
         while True:
-          if juegos == "casino":
+          if juegos == "ruleta":
 ```
+En este apartado se realiza la seleccion de el juego que desea jugar (actualmente solo esta disponible la ruleta). luego un bucle while el cual dera util a la hora de finalizar el juego de la ruleta permitiendo que el jugador pueda volver a apotar en el mismo juego, y se establece el inicio del juego (ruleta) si se selecciona dicha opcion. 
+#### - 
 ¿Qué limitaciones técnicas encontraste y cómo las superaste?
 
 
