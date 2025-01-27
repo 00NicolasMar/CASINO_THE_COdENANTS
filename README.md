@@ -39,26 +39,10 @@ este video nos sirvio para aprender a usar las palabras reservadas try, except y
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
 para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal del casino y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
 
-Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de diagramas que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder desarrollar el codigo de la ruleta asi como un repaso a los temas vistos en clase. Cabe aclarar que siempre es util plantear que es lo que queremos hacer y un paso a paso de la realizacion del codigo, ya que a la hora de "traducirlo" a python siempre sera mas sencillo, ya que nos ahorrariamos bastante tiempo probando a ver que es lo que funciona, y no improvisariamos a la hora de ralizar el codigo.
+Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de un diagrama que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder desarrollar el codigo de la ruleta asi como un repaso a los temas vistos en clase. Cabe aclarar que siempre es util plantear que es lo que queremos hacer y un paso a paso de la realizacion del codigo, ya que a la hora de "traducirlo" a python siempre sera mas sencillo, ya que nos ahorrariamos bastante tiempo probando a ver que es lo que funciona, y no improvisariamos a la hora de ralizar el codigo.
+A continuacion presentamos el diagrama:
 
-### ¿Qué herramientas o recursos se emplearon en el desarrollo?
-
-Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.google/ ya que esta nos brinda una facilidades a la hora de escribir y probar el codigo de manera sencilla, facilidades como lo son:
-
-- Acceso a GPU / TPU.
-- Compartir código gracias a la programación colaborativa.
-- Visualizaciones gráficas sencillas.
-  
-##### (cabe recalcar que se desactivo la sistencia de IA). 
-
-![image](https://github.com/user-attachments/assets/32a16a0d-fc05-4a57-ba8c-46bfcdb4d32b)
-
-
- Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
-
- Adicional a esto tenemos un diagrama de flujo de cómo sería el proceso para ejecutar el código.
-
- ```mermaid
+```mermaid
  flowchart TD
     Inicio(Inicio) -->FM[Función Main] -->
     Q[ganancias = 0] -->
@@ -124,6 +108,20 @@ Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.goo
     AX{jugar_nuevamente != sí}-->|Dijo que sí|F
     AX -->|Dió otra respuesta|Fin(Break : Fin)
  ```
+### ¿Qué herramientas o recursos se emplearon en el desarrollo?
+
+Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.google/ ya que esta nos brinda una facilidades a la hora de escribir y probar el codigo de manera sencilla, facilidades como lo son:
+
+- Acceso a GPU / TPU.
+- Compartir código gracias a la programación colaborativa.
+- Visualizaciones gráficas sencillas.
+  
+##### (cabe recalcar que se desactivo la sistencia de IA). 
+
+![image](https://github.com/user-attachments/assets/32a16a0d-fc05-4a57-ba8c-46bfcdb4d32b)
+
+
+ Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
 
 ## 4. Mejoras
 ### ¿qué mejoras del proyecto tenemos planeadas para la entrega final?
