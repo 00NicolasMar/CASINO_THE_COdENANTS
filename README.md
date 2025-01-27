@@ -12,9 +12,9 @@ El proyecto es un casino virtual tematizado en Halo el cual contara con varios j
 El hecho de que existan estas opciones de apuesta no implica que sea necesario seleccionarlas todas, por lo que si no desea ingresar en su apuesta algunas de las anteriores opciones, puede expresar “ninguno”, lo que indicará que no se apostara en tal apartado. (debe seleccionar al menos 1 de las opciones de apuesta, o si no no se hará efectiva la apuesta).
 ###### se van a agregar mas opciones de apuestas. 
 ### ¿Qué nos motivó a elegir este tema?
-Realmente nunca hubo un interés en particular por los juegos de azar, simplemente nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
+Nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
 Veámoslo de la siguiente manera, en una ruleta de casino convencional se cuentan con 37 números, por lo tanto según el casino oddschecker la posibilidad de acertar dicho número es básicamente de un  2,70% contra un 97,30 de perder, pero en cuanto apuestas relacionadas con un conjunto específico de números (color o paridad) la posibilidad en cada caso es de ganar es de 48.6%.
-Visto de esta manera no está tan mal… ya que al apostar por un color tienes una posibilidad de ganar del 50% lo que significa duplicar tu dinero, o no?
+Visto de esta manera no está tan mal… ya que al apostar por un color tienes una posibilidad de ganar del 50% lo que significa duplicar tu dinero, o no?. 
 
 ### ¿Cuál es el objetivo principal del proyecto?
 Presentar el funcionamiento de los juegos de azar virtuales como lo son la ruleta, y demas juegos que se pueden encontrar en este entorno. asi como desarrollar un programa que permita jugarlos y replicar algunos juegos de casino con el fin de generar un interes en los jugadores (no fomentamos la ludopatia, simplemente es una simulacion).  
