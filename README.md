@@ -56,6 +56,75 @@ Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.goo
 
  Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
 
+ Adicional a esto tenemos un diagrama de flujo de cómo sería el proceso para ejecutar el código.
+
+ ```mermaid
+ flowchart TD
+    Inicio(Inicio) -->FM[Función Main] -->
+    Q[ganancias = 0] -->
+    R[condiciones_totales = 0] -->
+    S[Condiciones_acertadas = 0]-->
+    FC[Función Casino] -->
+    A["print (Bienvenido al Casino)"] 
+    A --> B[input: Ingrese el dinero]
+    B -->C{dinero <= 0}
+    C -->|Sí|D["print (La cantidad apostada debe ser mayor a 0.)"]
+    D -->B
+    C -->|No|E[input: Selecciona el juego que deseas jugar: 'Casino' o 'no sé':]
+    E -->F{juegos == casino}
+    F -->G{juegos == no sé}
+    G -->H["print(Aún no, espera que dejemos la ruleta super jajajs)"]
+    G -->|Else|I["print(Opción de juego no válida. Por favor, elige 'Casino' o 'nose'.)"]
+    F -->Efe["color_apuesta = input(Un color entre rojo, negro, verde o ninguno:)"]
+    Efe -->J{"color_apuesta  not in [rojo, negro, verde, ninguno]"}
+    J -->K[Ingrese una opción válida]
+    K -->J
+    J -->Co(Continue)
+    Co -->Ele["numero_par = input(Selecciona si tu número será 'par', 'impar' o 'ninguno':"]
+    Ele -->Ola{"numero_par not in ['par', 'impar', 'ninguno']:"}
+    Ola -->Wao["print( Opción no válida. Por favor, elige entre 'par', 'impar' o 'ninguno'.)"]
+    Wao -->con(Continue)
+    con -->L{número_ruleta == 0}
+    L -->|Sí|M[verde]
+    L -->Ene{2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35}
+    Ene -->|Sí|N[negro]
+    Ene -->|Else|O[rojo]
+    M --> P
+    N --> P
+    O --> P[print: resultado del número y color]-->
+    T[color_apuesta = input: color] -->
+    U{color_apuesta != ninguno} -->
+    V[condiciones_totales += 1] -->
+    W{color_apuesta == color_ruleta} -->
+    X[ganancias += dinero * 2]-->
+    Y[Condiciones_acertadas += 1]-->
+    Z[print: acertaste resultado]-->
+    AA{numero_par != ninguno}-->
+    AB[condiciones_totales += 1] -->
+    AC{numero_par == par & numero_ruleta % 2 == 0 & numero_ruleta != 0}-->
+    AD[ganancia += dinero * 1.5]-->
+    AE[condiciones_acertadas += 1]-->
+    AF[print : Acertaste par]
+    AC -->AG{numero_par == impar & numero_ruleta % 2 != 0} -->
+    AH[ganacia += dinero * 1.5]-->
+    AI[condiciones_acertadas += 1]-->
+    AJ[print : Acertaste impar]-->AK
+    AF -->AK{numero_elegido != ninguno} -->
+    AL[condiciones_totales += 1] -->
+    AM{numero_ruleta == numero_elegido} -->
+    AN[ganancias += dinero * 5] -->
+    AO[condiciones_acertadas += 1]-->
+    AP[print : Adivinaste el número]-->
+    AQ{condiciones_acertadas < condiciones_totales}
+    AQ -->|Sí|AS[Print: Perdiste]-->AU
+    AQ -->|No|AT[Print: Ganaste]-->AU
+    AU[Print : Dinero Ingresado]-->
+    AV[Print : Ganancia Total]-->
+    AW[jugar_nuevamente = input ¿quieres volver a jugar?]-->
+    AX{jugar_nuevamente != sí}-->|Dijo que sí|F
+    AX -->|Dió otra respuesta|Fin(Break : Fin)
+ ```
+
 ## 4. Mejoras
 ### ¿qué mejoras del proyecto tenemos planeadas para la entrega final?
 
