@@ -1,4 +1,4 @@
-# CASINO_THE_COdENANTS
+# CASINO THE COdENANTS
 ## 1. Introducción y Contexto
 ### ¿Cuál es el proyecto?
 El proyecto es un casino virtual tematizado en Halo, el cual contará con varios juegos disponibles, uno llamado "SpartanRoulette" y otros juegos.... Este primero es una ruleta la cual consatara de 37 numeros del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
