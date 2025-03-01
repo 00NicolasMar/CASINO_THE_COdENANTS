@@ -1,7 +1,14 @@
 # CASINO THE COdENANTS
 ## 1. Introducción y Contexto
 ### ¿Cuál es el proyecto?
-El proyecto es un casino virtual tematizado en la serie de videojuegos Halo, el cual cuenta con 2 juegos de azar, llamados "SpartanRoulette" y "RiquezaDelCovenant" . 
+El proyecto es un casino virtual tematizado en la serie de videojuegos Halo, el cual cuenta con 2 juegos de azar, llamados "SpartanRoulette" y "RiquezaDelCovenant" .
+### ¿Qué nos motivó a elegir este tema?
+Nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
+Veámoslo de la siguiente manera, en una ruleta de casino convencional se cuentan con 37 números, por lo tanto según el casino oddschecker la posibilidad de acertar dicho número es básicamente de un  2,70% contra un 97,30 de perder, pero en cuanto apuestas relacionadas con un conjunto específico de números (color o paridad) la posibilidad en cada caso es de ganar es de 48.6%.
+Visto de esta manera no está tan mal… ya que al apostar por un color tienes una posibilidad de ganar del 50% lo que significa duplicar tu dinero, o no?. 
+
+### ¿Cuál es el objetivo principal del proyecto?
+Presentar el funcionamiento de los juegos de azar virtuales como lo son la ruleta, y demas juegos que se pueden encontrar en este entorno. asi como desarrollar un programa que permita jugarlos y replicar algunos juegos de casino con el fin de generar un interes en los jugadores (no fomentamos la ludopatia, simplemente es una simulacion).  
 # SpartanRoulette
 Este juego es una ruleta que consta de 37 casillas, señaladas con números del 0 al 36, de los cuales 18 son números identificados por color negro, los 18 restantes son de color rojo y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
 ### Opciones de apuesta:
@@ -21,13 +28,6 @@ Este juego es una maquina tragamonedas que muestra en un recuadro de 3x3, donde 
  - Si coincide el mismo simbolo en 2 casillas seguidas, gana **X2** en base al dinero apostado.
  - Si no se cumplen las 2 opciones anteriores, el jugador pierde el dinero apostado. 
 
-### ¿Qué nos motivó a elegir este tema?
-Nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
-Veámoslo de la siguiente manera, en una ruleta de casino convencional se cuentan con 37 números, por lo tanto según el casino oddschecker la posibilidad de acertar dicho número es básicamente de un  2,70% contra un 97,30 de perder, pero en cuanto apuestas relacionadas con un conjunto específico de números (color o paridad) la posibilidad en cada caso es de ganar es de 48.6%.
-Visto de esta manera no está tan mal… ya que al apostar por un color tienes una posibilidad de ganar del 50% lo que significa duplicar tu dinero, o no?. 
-
-### ¿Cuál es el objetivo principal del proyecto?
-Presentar el funcionamiento de los juegos de azar virtuales como lo son la ruleta, y demas juegos que se pueden encontrar en este entorno. asi como desarrollar un programa que permita jugarlos y replicar algunos juegos de casino con el fin de generar un interes en los jugadores (no fomentamos la ludopatia, simplemente es una simulacion).  
 
 ## 2. Marco Teórico
 ### ¿Que fuentes utilizamos para la realizacion?
