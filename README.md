@@ -1,7 +1,7 @@
 # CASINO THE COdENANTS
 ## 1. Introducción y Contexto
 ### ¿Cuál es el proyecto?
-El proyecto es un casino virtual tematizado en Halo, el cual cuenta con 2 juegoz de azar, llamados "SpartanRoulette" y "RiquezaDelCovenant" . 
+El proyecto es un casino virtual tematizado en la serie de videojuegos Halo, el cual cuenta con 2 juegos de azar, llamados "SpartanRoulette" y "RiquezaDelCovenant" . 
 # SpartanRoulette
 Este juego es una ruleta la cual consta de 37 casillas que van señaladas con números del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
 #### Escoger color
