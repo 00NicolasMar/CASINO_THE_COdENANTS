@@ -8,7 +8,9 @@ Veámoslo de la siguiente manera, en una ruleta de casino convencional se cuenta
 Visto de esta manera no está tan mal… ya que al apostar por un color tienes una posibilidad de ganar del 50% lo que significa duplicar tu dinero, o no?. 
 
 ### ¿Cuál es el objetivo principal del proyecto?
-Presentar el funcionamiento de los juegos de azar virtuales como lo son la ruleta, y demas juegos que se pueden encontrar en este entorno. asi como desarrollar un programa que permita jugarlos y replicar algunos juegos de casino con el fin de generar un interes en los jugadores (no fomentamos la ludopatia, simplemente es una simulacion).  
+Presentar el funcionamiento de los juegos de azar virtuales como lo son la ruleta, y demas juegos que se pueden encontrar en este entorno. asi como desarrollar un programa que permita jugarlos y replicar algunos juegos de casino con el fin de generar un interes en los jugadores (no fomentamos la ludopatia, simplemente es una simulacion). 
+
+# Ahora si, a volvernos millonarios.
 # SpartanRoulette
 Este juego es una ruleta que consta de 37 casillas, señaladas con números del 0 al 36, de los cuales 18 son números identificados por color negro, los 18 restantes son de color rojo y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
 ### Opciones de apuesta:
