@@ -28,7 +28,7 @@ Este juego es una maquina tragamonedas que muestra en un recuadro de 3x3, donde 
 ### Reglas de ganancia
  - Si coincide el mismo simbolo en 3 casillas seguidas, gana **X10** en base al valor apostado.
  - Si coincide el mismo simbolo en 2 casillas seguidas, gana **X2** en base al dinero apostado.
- - Si no se cumplen las 2 opciones anteriores, el jugador pierde el dinero apostado. 
+#### Si no se cumplen las 2 opciones anteriores, el jugador pierde el dinero apostado. 
 
 
 ## 2. Marco Teórico
