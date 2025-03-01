@@ -3,7 +3,8 @@
 ### ¿Cuál es el proyecto?
 El proyecto es un casino virtual tematizado en la serie de videojuegos Halo, el cual cuenta con 2 juegos de azar, llamados "SpartanRoulette" y "RiquezaDelCovenant" . 
 # SpartanRoulette
-Este juego es una ruleta la cual consta de 37 casillas que van señaladas con números del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
+Este juego es una ruleta que consta de 37 casillas, señaladas con números del 0 al 36, de los cuales 18 son números identificados por color negro, los 18 restantes son de color rojo y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
+### Opciones de apuesta:
 #### Escoger color
 ##### -Los colores rojo y negro generan una ganancia del *2 del dinero apostado
 ##### -El color Verde genera una ganancia del *50 siendo este el premio mayor de la ruleta 
