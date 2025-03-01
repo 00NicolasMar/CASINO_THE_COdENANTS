@@ -6,12 +6,12 @@ El proyecto es un casino virtual tematizado en la serie de videojuegos Halo, el 
 Este juego es una ruleta que consta de 37 casillas, señaladas con números del 0 al 36, de los cuales 18 son números identificados por color negro, los 18 restantes son de color rojo y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
 ### Opciones de apuesta:
 #### Escoger color
-##### -Los colores rojo y negro generan una ganancia del *2 del dinero apostado
-##### -El color Verde genera una ganancia del *50 siendo este el premio mayor de la ruleta 
+##### -Los colores rojo y negro generan una ganancia del X2 del dinero apostado
+##### -El color Verde genera una ganancia del X50 siendo este el premio mayor de la ruleta 
 #### Número 
-##### -La opción de escoger un número está, y siempre y cuando se acierte el número, la ganancia se dará en un *5 del valor apostado
+##### -La opción de escoger un número está, y siempre y cuando se acierte el número, la ganancia obtenida sera de X5 sobre el valor apostado
 #### Par o Impar
-##### -Si se acierta que es par o impar, la ganancia será de *1.5 del valor apostado
+##### -Si se acierta que es par o impar, la ganancia será de X1.5 del valor apostado
 El hecho de que existan estas opciones de apuesta no implica que sea necesario seleccionarlas todas, por lo que si no desea ingresar en su apuesta algunas de las anteriores opciones, puede expresar “ninguno”, lo que indicará que no se apostara en tal apartado. (debe seleccionar al menos 1 de las opciones de apuesta, o si no no se hará efectiva la apuesta).
 ###### se van a agregar mas opciones de apuestas. 
 # RiquezaDelCovenant
