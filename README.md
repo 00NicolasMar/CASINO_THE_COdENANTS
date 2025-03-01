@@ -1,7 +1,9 @@
 # CASINO THE COdENANTS
 ## 1. Introducción y Contexto
 ### ¿Cuál es el proyecto?
-El proyecto es un casino virtual tematizado en Halo, el cual contará con varios juegos disponibles, uno llamado "SpartanRoulette" y otros juegos.... Este primero es una ruleta la cual consatara de 37 numeros del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
+El proyecto es un casino virtual tematizado en Halo, el cual cuenta con 2 juegoz de azar, llamados "SpartanRoulette" y "RiquezaDelCovenant" . 
+# SpartanRoulette
+Este juego es una ruleta la cual consta de 37 casillas que van señaladas con números del 0 al 36, de los cuales 18 son numeros identificados por color negro, los 18 restantes siendo rojos y el 0 siendo el único número color verde de toda la ruleta. Este juego cuenta con la opción de ingresar un monto de dinero, y seleccionar las siguientes opciones de apuesta, la cual generará una ganancia correspondiente a lo seleccionado.
 #### Escoger color
 ##### -Los colores rojo y negro generan una ganancia del *2 del dinero apostado
 ##### -El color Verde genera una ganancia del *50 siendo este el premio mayor de la ruleta 
@@ -11,6 +13,8 @@ El proyecto es un casino virtual tematizado en Halo, el cual contará con varios
 ##### -Si se acierta que es par o impar, la ganancia será de *1.5 del valor apostado
 El hecho de que existan estas opciones de apuesta no implica que sea necesario seleccionarlas todas, por lo que si no desea ingresar en su apuesta algunas de las anteriores opciones, puede expresar “ninguno”, lo que indicará que no se apostara en tal apartado. (debe seleccionar al menos 1 de las opciones de apuesta, o si no no se hará efectiva la apuesta).
 ###### se van a agregar mas opciones de apuestas. 
+# RiquezaDelCovenant
+
 ### ¿Qué nos motivó a elegir este tema?
 Nos generaba curiosidad el entender el funcionamiento de un casino virtual, más específicamente los juegos de ruleta. Ya que se creería que uno tiene más posibilidades de ganar que de perder, pero realmente esto es así?
 Veámoslo de la siguiente manera, en una ruleta de casino convencional se cuentan con 37 números, por lo tanto según el casino oddschecker la posibilidad de acertar dicho número es básicamente de un  2,70% contra un 97,30 de perder, pero en cuanto apuestas relacionadas con un conjunto específico de números (color o paridad) la posibilidad en cada caso es de ganar es de 48.6%.
