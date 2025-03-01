@@ -7,11 +7,11 @@ Este juego es una ruleta que consta de 37 casillas, señaladas con números del 
 ### Opciones de apuesta:
 #### Escoger color
  - Los colores rojo y negro generan una ganancia de **X2** sobre el dinero apostado.
- - El color Verde genera una ganancia del **X50** siendo este el premio mayor de la ruleta. 
+ - El color Verde genera una ganancia del **X50** sobre el dinero apostado, siendo este el premio mayor de la ruleta. 
 #### Número 
  - La opción de escoger un número está, y siempre y cuando se acierte el número, la ganancia obtenida sera de **X5** sobre el valor apostado.
 #### Par o Impar
-##### -Si se acierta que es par o impar, la ganancia será de X1.5 del valor apostado
+ - Si se acierta que es par o impar, la ganancia será de **X1.5** del valor apostado.
 El hecho de que existan estas opciones de apuesta no implica que sea necesario seleccionarlas todas, por lo que si no desea ingresar en su apuesta algunas de las anteriores opciones, puede expresar “ninguno”, lo que indicará que no se apostara en tal apartado. (debe seleccionar al menos 1 de las opciones de apuesta, o si no no se hará efectiva la apuesta).
 ###### se van a agregar mas opciones de apuestas. 
 # RiquezaDelCovenant
