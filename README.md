@@ -137,20 +137,7 @@ Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.goo
 
  Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
 
-## 4. Mejoras
-### ¿qué mejoras del proyecto tenemos planeadas para la entrega final?
-
-primero que nada, lo que queremos hacer es por lo menos 3 juegos que nos amplien y agreguen complejidad al codigo, ya que si bien el actual no es muy corto que digamos si es necesario aumentar un poco su complejidad.
-Por lo que queremos saber que otros juegos de casino estarian bien para añadir al casino. (maximo dos). por lo que nos seria de gran ayuda que ingresaran al siguiente forms y seleccionaran dos juegos.
-"link de forms"
-
-En cuanto al codigo de la ruleta, queremos implementar mas opciones de apuestas, como lo son las docenas, columnas y el conjunto de numeros. Ya que queremos que la ruleta tenga variedad de opciones de apuestas, y hacer un poco mas interesante el juego.
-	![image](https://github.com/user-attachments/assets/870a8910-ae58-41fc-8c51-b88486db2f0d)
-
-###### Eso sí mantenemos que con almenos el fallo de una de las condiciones de apuesta, perderas todo tu dinero, pero... no pasa nada, es dinero falso, podras seguir apostando.  
-
-## 5. Preguntas Técnicas
-### ¿Cómo funciona el programa?
+## 5. ¿Cómo funciona el programa?
 ##### A continuacion haremos una explicacion paso a paso del codigo, para que el entendimiento de su funcionamiento sea claro.
 #### - Import y Definir funcion principal
 
@@ -313,8 +300,8 @@ En el desarrollo del codigo hubieron bastantes inconvenientes a la hora de su re
 
 Otro problema que tuvimos, fue el hecho de que si el jugador ingresaba un numero que no perteneciera al rango (0, 36) nos daba error, cosa que si bien no es critica, corta la experiencia, por lo que teniamos que buscar una solucion al problema (fue un poco dificil porque no sabiamos que funcionaba), para llegar a la solucion con ayuda de un compañero, nos dijo que investigaramos un poco sobre las excepciones, por lo que despues de un ratito viendo un video logramos dar la solucion a dicho "problema".
 
-## 6. Conclusiones
-estas se haran una vez terminado el proyecto jeje
+## 6. Conclusion.
+
 
 
 
