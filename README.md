@@ -59,7 +59,6 @@ A continuacion presentamos el diagrama:
 
 ```mermaid
  flowchart TD
-    flowchart TD
     Inicio(Inicio) -->FM[Función Main] -->
     Q[ganancias = 0] -->
     R[condiciones_totales = 0] -->
