@@ -59,6 +59,7 @@ A continuacion presentamos el diagrama:
 
 ```mermaid
  flowchart TD
+    flowchart TD
     Inicio(Inicio) -->FM[Función Main] -->
     Q[ganancias = 0] -->
     R[condiciones_totales = 0] -->
@@ -69,11 +70,46 @@ A continuacion presentamos el diagrama:
     B -->C{dinero <= 0}
     C -->|Sí|D["print (La cantidad apostada debe ser mayor a 0.)"]
     D -->B
-    C -->|No|E[input: Selecciona el juego que deseas jugar: 'Casino' o 'no sé':]
-    E -->F{juegos == casino}
-    F -->G{juegos == no sé}
-    G -->H["print(Aún no, espera que dejemos la ruleta super jajajs)"]
-    G -->|Else|I["print(Opción de juego no válida. Por favor, elige 'Casino' o 'nose'.)"]
+    C -->|No|WH[input: Selecciona el juego que deseas jugar: ruleta 'r' o tragamonedas 't':]
+    WH -->E[While True:]
+    E -->F{juegos == r}
+    F -->G{juegos == t}
+    G -->H[función tragamonedas]
+    H -->TA["print(🎰 Juego Tragamonedas 🎰)"]
+    TA-->TB["print(juganado)"]
+    TB-->TC["time.sleep(2)"]
+    -->TD["simbolos = [🍒, 🍋, 🔔, ⭐, 7️⃣, ❌, 👨‍✈️, 👽, ☘️, 🌌, ☣️, 🧬, ☠️, 🛸]"]
+    -->TE["matriz = []"]
+    -->TF["for _ in range(3)"]
+    -->TG["fila = []"]
+    -->TH["for _ in range (3)"]
+    -->TI["fila.append(random.choise(simbolos))"]-->|x3|TH
+    -->TJ["matriz.append(fila)"]-->TF
+    -->TK[for fila in matriz]
+    -->TL["print(' | '.join(fila))"]-->TK
+    -->TM["resultado = matriz[1]"]
+    -->TN["print('Resultado: ' + ' | '.join(resultado))"]
+    -->TO[ganancia_h = 0]
+    -->TP{"len(set(resultado)) == 1:"}
+    TP-->|sí|TV["print(¡Felicidades! Gano 10 veces tu apuesta.)"]
+    -->TW[ganancia_h = dinero * 10]-->TX
+    TP-->|no|TQ{"len(set(resultado)) == 2:"}
+    TQ-->|sí|TR["print(Casi todas, solo se dobla tu apuesta)"]
+    -->TS[ganancia_h = dinero * 2]-->TX
+    TQ-->|no|TT["print(mala suerte, perdiste)"]-->TX
+    TX[ganancia = 0]
+    -->TY["columna_medio = []"]
+    -->TAA["for i in range(3)"]
+    -->TZ["columna_medo.append(matriz[i][1])"]-->|x3|TAA
+    TZ-->TAB{"len(set(columna_medio)) == 1:"}
+    -->|sí|TAC["print("¡Felicidades! Obtuviste tres iguales en la columna del medio. Ganaste 1.5 veces tu apuesta.]
+    -->TAD[ganancia_v = dinero * 1.5]-->TAE
+    TAB --> |no|TAE
+    TAE[return ganancia_h + ganancia_v]
+    -->TAF["ganancia = tragamonedas(dinero)"]
+    -->TAG["print('Ganancia total: $' +str(ganancia))"]
+    -->AW
+    G -->|Else|GA["print(Opción de juego no válida. Por favor, elige 'Casino' o 'nose'.)"]
     F -->Efe["color_apuesta = input(Un color entre rojo, negro, verde o ninguno:)"]
     Efe -->J{"color_apuesta  not in [rojo, negro, verde, ninguno]"}
     J -->K[Ingrese una opción válida]
