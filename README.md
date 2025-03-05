@@ -22,14 +22,14 @@ Este juego es una ruleta que consta de 37 casillas, señaladas con números del 
  - Si se acierta que es par o impar, la ganancia será de **X1.5 veces el valor apostado**.
 El hecho de que existan estas opciones de apuesta no implica que sea necesario seleccionarlas todas, por lo que si no desea ingresar en su apuesta algunas de las anteriores opciones, puede expresar “ninguno”, lo que indicará que no se apostara en tal apartado. (debe seleccionar al menos 1 de las opciones de apuesta, o si no no se hará efectiva la apuesta).
 #### Si no acerta alguna de las opciones seleccionadas, el jugador pierde el dinero apostado. 
-### Herrmientas vistas en el curso que se ultilizaron en el codigo: Bucles, listas, condicionales y funciones.
+### Herrmientas vistas en el curso que se ultilizaron en el código: Bucles, listas, condicionales y funciones.
 # RiquezaDelCovenant
 Este juego es una maquina tragamonedas que muestra en un recuadro de 3 filas y 3 columnas donde salen simbolos aleatorios en cada casilla.
 ### Reglas de ganancia
  - Si coincide el mismo simbolo en 3 casillas seguidas, gana **X10** en base al valor apostado.
  - Si coincide el mismo simbolo en 2 casillas seguidas, gana **X2** en base al dinero apostado.
 #### Si no se cumplen las 2 opciones anteriores, el jugador pierde el dinero apostado. 
-### Herrmientas vistas en el curso que se ultilizaron en el codigo: Bucles, listas, condicionales, funciones y matricez.
+### Herrmientas vistas en el curso que se ultilizaron en el código: Bucles, listas, condicionales, funciones y matricez.
 
 
 
