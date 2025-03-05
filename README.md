@@ -51,7 +51,7 @@ Este video nos sirvio para aprender a usar las palabras reservadas try, except y
 
 #### 4. https://www.youtube.com/watch?v=tU50HfCd4XQ&t=721s  y  https://www.youtube.com/shorts/aFgA4s6bhQM
 
-Estos videos presentan una guia basica del como podriamos desarrollar el programa para simular la máquina tragamonedas.
+Estos videos presentan una guía básica del como podriamos desarrollar el programa para simular la máquina tragamonedas.
 
 ## 3. Metodología
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
