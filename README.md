@@ -35,23 +35,23 @@ Este juego es una maquina tragamonedas que muestra en un recuadro de 3 filas y 3
 
 ## 2. Marco Teórico
 ### ¿Que fuentes utilizamos para la realizacion?
-Para la realización del juego de la ruleta de casino, utilizamos como referencia y guia de desarrollo, los siguientes videos y paginas web.
+Para la realización del proyecto, utilizamos como referencia y guia de desarrollo, los siguientes videos y paginas web.
 
 #### 1. https://www.youtube.com/watch?v=SfcR7GXEd6Y
 
-este video explica de manera rápida, pero clara como se programa una ruleta con condiciones simples, por lo que fue un muy buen pie de inicio a la hora de empezar a escribir el código.
+Este video explica de manera rápida, pero clara como se programa una ruleta con condiciones simples, por lo que fue un muy buen pie de inicio a la hora de empezar a escribir el código.
 
 #### 2. https://www.scj.cl/funcionamiento-de-los-juegos/juegos-de-ruleta#:~:text=La%20ruleta%20es%20un%20juego,rueda%20horizontal%20giratoria%2C%20denominada%20ruleta.
 	
-esta página web nos ayudó a comprender el funcionamiento de diversos tipos de ruletas, y así basarnos en una en específico para la realización de mi código (la ruleta europea).
+Esta página web nos ayudó a comprender el funcionamiento de diversos tipos de ruletas, y así basarnos en una en específico para la realización de mi código (la ruleta europea).
 
 #### 3. https://www.youtube.com/watch?v=jJyKET9ZVdE
 
-este video nos sirvio para aprender a usar las palabras reservadas try, except y finally, las cuales nos funcionaron para que a la hora de ingresar en el input un dato diferente a un entero o al el dato que se solicite en el input, no nos de un error, si no que en cambio nos de un print indicando que el valor ingresado es invalido o algo por el estilo.
+Este video nos sirvio para aprender a usar las palabras reservadas try, except y finally, las cuales nos funcionaron para que a la hora de ingresar en el input un dato diferente a un entero o al el dato que se solicite en el input, no nos de un error, si no que en cambio nos de un print indicando que el valor ingresado es invalido o algo por el estilo.
 
 ## 3. Metodología
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
-para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal del casino y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
+Para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal del casino y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
 
 Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio de un diagrama que presentarian de manera comprensible y mas visual como funcionaria dicho programa. Pero adicional a eso nos toco ver videos de guia para poder desarrollar el codigo de la ruleta asi como un repaso a los temas vistos en clase. Cabe aclarar que siempre es util plantear que es lo que queremos hacer y un paso a paso de la realizacion del codigo, ya que a la hora de "traducirlo" a python siempre sera mas sencillo, ya que nos ahorrariamos bastante tiempo probando a ver que es lo que funciona, y no improvisariamos a la hora de ralizar el codigo.
 A continuacion presentamos el diagrama:
