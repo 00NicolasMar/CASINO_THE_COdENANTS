@@ -30,7 +30,7 @@ Este juego es una maquina tragamonedas que muestra en un recuadro de 3x3, donde 
  - Si coincide el mismo simbolo en 3 casillas seguidas, gana **X10** en base al valor apostado.
  - Si coincide el mismo simbolo en 2 casillas seguidas, gana **X2** en base al dinero apostado.
 #### Si no se cumplen las 2 opciones anteriores, el jugador pierde el dinero apostado. 
-### Herrmientas vistas en el curso que se ultilizaron en el codigo: Bucles, listas, condicionales, funciones y matricez.****
+### Herrmientas vistas en el curso que se ultilizaron en el codigo: Bucles, listas, condicionales, funciones y matricez.
 
 
 
@@ -337,7 +337,7 @@ En el desarrollo del codigo hubieron bastantes inconvenientes a la hora de su re
 Otro problema que tuvimos, fue el hecho de que si el jugador ingresaba un numero que no perteneciera al rango (0, 36) nos daba error, cosa que si bien no es critica, corta la experiencia, por lo que teniamos que buscar una solucion al problema (fue un poco dificil porque no sabiamos que funcionaba), para llegar a la solucion con ayuda de un compañero, nos dijo que investigaramos un poco sobre las excepciones, por lo que despues de un ratito viendo un video logramos dar la solucion a dicho "problema".
 
 ## 6. Conclusion.
-
+Procesando
 
 
 
