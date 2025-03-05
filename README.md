@@ -216,99 +216,88 @@ import random
 import time
 
 def casino():
+    print("Bienvenido al Casino The CoDenants, un lugar en el cual podras entrar de manera limpia al mundo de la ludopatia(fake)")
 
-        print("Bienvenido al Casino The CoDenants")
-```
-En esta primera parte del codigo, se hizo un import de random que va a ser util para la seleccion del numero ganador de la ruleta, y el import time que va a ser el encargado de simular un giro de ruleta.
-Tambien se definio la funcion principal del programa que fue llamada Casino, haciendo asi la primera impresion del codigo, la cual sera la bienvenida al casino.
-#### - Ingreso de monto de apuesta
+    dinero = float(input("Ingresa la cantidad de dinero con la cual quieres jugar: "))
+    if dinero <= 0:
+        print("La cantidad apostada debe ser mayor a 0.")
+        return
 
-```pseudocode
- dinero = float(input("Ingresa la cantidad de dinero con la cual quieres jugar: "))
-        if dinero <= 0:
-            print("La cantidad apostada debe ser mayor a 0.")
-```
-En este apoartado se realiza el ingreso del monto el cual va a apostar el jugador, utilizando el condicional `if` se establece que si se ingresa un valor menor a 0 no puede jugar, ya que no es valido el monto.
-#### - Seleccion de juego.
+    juegos = input("Selecciona el juego que deseas jugar: 'ruleta' (r) o 'tragamonedas' (t): ")
 
-```pseudocode
- juegos = input("Selecciona el juego que deseas jugar: 'Ruleta' o 'nose': ")
-        while True:
-          if juegos == "ruleta":
-```
-En este apartado se realiza la seleccion de el juego que desea jugar (actualmente solo esta disponible la ruleta). luego un bucle while el cual dera util a la hora de finalizar el juego de la ruleta permitiendo que el jugador pueda volver a apotar en el mismo juego, y se establece el inicio del juego (ruleta) si se selecciona dicha opcion. 
-#### - Apuestas a color y pareidad
+    while True:
+        if juegos == "r":
+          # aqui se realiza una impresion de la ruleta condicionado de que el numero que caiga sera reemplazado por el simbolo de x (unicode)
+            def imprimir_ruleta(cambiar_numero=None):
+                numeros_ruleta = [
+                    ["#", 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36],
+                    [0, 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35],
+                    ["#", 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34]
+                ]
+                for i in range(len(numeros_ruleta)):
+                    for j in range(len(numeros_ruleta[i])):
+                        if numeros_ruleta[i][j] == cambiar_numero:
+                            numeros_ruleta[i][j] = "❌"
 
-```pseudocode
-            color_apuesta = input("Escoge un color entre rojo, negro, verde o ninguno: ")
-            if color_apuesta  not in ["rojo", "negro", "verde", "ninguno"]:
-                print("Ese color no está en la ruleta. Por favor, elige entre 'rojo', 'negro', 'verde' o 'ninguno'.")
+                for fila in numeros_ruleta:
+                    print(" ".join(map(str, fila)))
+            # Apuestas de color
+            color_apuesta = input("Escoge un color entre rojo, negro, verde o ninguno (n): ")
+            while color_apuesta not in ["rojo", "negro", "verde", "n"]:
+                print("Ese color no está en la ruleta. Intenta de nuevo.")
+                color_apuesta = input("Escoge un color entre rojo, negro, verde o ninguno (n): ")
 
-            numero_par = input("Selecciona si tu número será 'par', 'impar' o 'ninguno': ")
-            if numero_par not in ["par", "impar", "ninguno"]:
-                print("Opción no válida. Por favor, elige entre 'par', 'impar' o 'ninguno'.")
-```
-En estas lineas se establecen dos apuestas que se pueden realizar en el casino, como lo son la seleccion de color y de propiedad par de el numer, utilizando condicional if, indicando que si seleccionas algo diferente a las opciones dadas, no puedes continuar tu apuesta.
-#### - Apuesta a Numero especifico
+            # Apuestas de par o impar
+            numero_par = input("Selecciona si tu número será 'par', 'impar' o 'ninguno'(n): ")
+            while numero_par not in ["par", "impar", "n"]:
+                print("Opción inválida. Intenta de nuevo.")
+                numero_par = input("Selecciona 'par', 'impar' o 'ninguno': ")
 
-```pseudocode
-numero_elegido = input("Escoge un número entre 0 y 36 o escribe ninguno: ")
-            if numero_elegido != "ninguno":
-                try:
-                    numero_elegido = int(numero_elegido)
-                    if numero_elegido < 0 or numero_elegido > 36:
-                        print("El número que escogiste no hace parte de la ruleta. Por favor, elige un número entre 0 y 36.")
-                   
-                except ValueError:
-                    print("Debes ingresar otro numero o escribir ninguno.")
-```
-En este apartado se establece la opcion de escoger un numero que este dentro del rango (0, 36), en el cual si eliges un numero que no se encuentre en el rango, no podras continuar tu apuesta y deberas seleccionar un numero que si este dentro del rango anteriormente mencionado. (aqui se utilizo el try, except para que el codigo no diera error, si no que en vez de eso hiciera una impresion indicando que se debe ingresar otro numero)
-#### - Giro de ruleta
+            # Apuestas de numeros especificos
+            numero_elegido = input("Escoge un número entre 0 y 36 o escribe 'ninguno': ")
+            if numero_elegido != "n":
+                while True:
+                    try:
+                        numero_elegido = int(numero_elegido)
+                        if 0 <= numero_elegido <= 36:
+                            break
+                        else:
+                            print("Número fuera de rango. Intenta de nuevo.")
+                            numero_elegido = input("Escoge un número entre 0 y 36 o escribe 'ninguno': ")
+                    except ValueError:
+                        print("Entrada inválida. Intenta de nuevo.")
+                        numero_elegido = input("Escoge un número entre 0 y 36 o escribe 'ninguno': ")
 
-```pseudocode
-	    print("Girando la ruleta...")
+            # Giro de la ruleta
+            print("Girando la ruleta...")
             for _ in range(10):
-              print("Numeros girando: " + str(random.randint(0, 36)), end="\r")
-              time.sleep(0.5)
-              numero_ruleta = random.randint(0, 36)
-```
-Aqui se hace la simulacion del giro de la ruleta, utilizando el `import random` y `import time`, haciendo primero un print que simule el girando la ruleta...., luego estableciendo que haga un conteo de 10 numeros (cado uno durando 0.5seg), y que al final de como resultado el numero seleccionado de manera aleatoria, numero el cual sera el que cayo en la ruleta. (dicho numero estara en el rango 0, 36).
-#### - Establecer color a cada número.
+                print("Números girando: " + str(random.randint(0, 36)), end="\r")
+                time.sleep(0.3)
 
-```pseudocode
-	    if numero_ruleta == 0:
+            numero_ruleta = random.randint(0, 36)
+            imprimir_ruleta(numero_ruleta)
+            if numero_ruleta == 0:
               color_ruleta = "verde"
             elif numero_ruleta in [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35]:
               color_ruleta = "negro"
-            else:
-              color_ruleta = "rojo"
-```
-En este apartado se establecen condiciones que determinaran el color a cada numero, el 0 siendo el unico verde, y por medio de una lista establecer que los numeros  [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35] son de color negro, dejando asi a los numero que no sean pertenecientes a la lista anterior ni 0 como numeros rojos.
-#### - Número Ganador.
+            else: "rojo"
 
-```pseudocode
-print("La ruleta cayó en el número " + str(numero_ruleta)+ " " + str(color_ruleta))
-```
-Esta linea hace una impresion del numero que cayo en la ruleta y tambien a que color pertenece.
-#### - Apuestas combinadas.
+            print("La ruleta cayó en el número " + str(numero_ruleta) + " " + str(color_ruleta))
 
-```pseudocode
-ganancia = 0
+            # Cálculo de ganancias
+            ganancia = 0
             condiciones_totales = 0
             condiciones_acertadas = 0
-```
-Estas lineas son utiles para determinar que si el jugador hizo mas de una apuesta, asegurando que la ganacia corresponda a las apuestas que hizo.
-#### - 
 
-```pseudocode
-            if color_apuesta != "ninguno":
+            #calculos de condiciones
+            if color_apuesta != "n":
                 condiciones_totales += 1
                 if color_apuesta == color_ruleta:
                     ganancia += dinero * 2
                     condiciones_acertadas += 1
-                    print("¡Acertaste el color " + str(color_apuesta) + "! Ganaste el doble de tu apuesta.")
+                    print("¡Acertaste el color " + str(color_apuesta) + "!")
 
-            if numero_par != "ninguno":
+            if numero_par != "n":
                 condiciones_totales += 1
                 if numero_par == "par" and numero_ruleta % 2 == 0 and numero_ruleta != 0:
                     ganancia += dinero * 1.5
@@ -319,48 +308,70 @@ Estas lineas son utiles para determinar que si el jugador hizo mas de una apuest
                     condiciones_acertadas += 1
                     print("¡Acertaste que el número es impar! ")
 
-            if numero_elegido != "ninguno":
+            if numero_elegido != "n":
                 condiciones_totales += 1
                 if numero_ruleta == numero_elegido:
                     ganancia += dinero * 5
                     condiciones_acertadas += 1
-                    print("¡Adivinaste el número exacto" + str(numero_elegido) + "! Ganaste 5 veces tu apuesta.")
-```
-Estas lineas son las encargadas de determinar las ganancias por medio de las condiciones totales y las condiciones ganadas, dando como resultado que si el jugador hizo mas de 1 apuesta cada condicion correspondera a las condiciones que debera acertar para ganar el dinero.
-#### - Determinacion de ganacias
-
-```pseudocode
-            if condiciones_acertadas < condiciones_totales:
-                ganancia = 0
-                print("No acertaste todas las condiciones seleccionadas... Perdiste tu dinero.")
-            else:
-                print("¡Increíble! Acertaste todas las "+ str(condiciones_acertadas) + " condiciones seleccionadas.")
-	    print("Dinero ingresado: $" + str(dinero))
+                    print("¡Adivinaste el número exacto " + str(numero_elegido) + "!")
+                elif numero_elegido == 0 and numero_ruleta == numero_elegido:
+                    ganancia += dinero * 50
+                    condiciones_acertadas += 1
+                    print("¡Soldado acertó que el numero era exactamente 0, ganaste el premio mayor.... un duro usted!")
+            #calculos de ganancias de dineros
+            print("Dinero ingresado: $" + str(dinero))
             print("Ganancia total: $" + str(ganancia))
-```
-En estas lineas se establece que cada apuesta hecha tiene que corresponder a las apuestas acertadas, con el fin de que la ganancia sea acorde a lo que se apostó, y tambien determinando que si de las apuestas que hizo fallo al menos 1, pierde todo su dinero, haciendo una impresion de lo que tenia vs lo que gano o perdio segun sea el caso.
-#### - Seleccion de la maquina tragamonedas.
 
-```pseudocode
-          elif juegos == "nose":
-            print("Aun no, espera que dejemos la ruleta super jajajs")
-          else:
-            print("Opción de juego no válida. Por favor, elige 'ruleta' o 'nose'."
-```
-En estas lineas se establece el caso donde el jugador desea jugar la máquina tragamonedas.
-#### - ¿Deseas continuar jugando? 
+        elif juegos == "t":
+            def tragamonedas(dinero):
+                print("🎰 Juego Tragamonedas 🎰")
+                print("Jugando...")
+                time.sleep(2)
+                # simbolos a imprimir (son del sistema unicode)
+                simbolos = ["🍒", "🍋", "🔔", "⭐", "7️⃣", "❌", "👨‍✈️", "👽", "☘️", "🌌", "☣️", "🧬", "☠️", "🛸"]
 
-```pseudocode
-          jugar_nuevamente = input("¿Quieres jugar nuevamente? sí o no bro..: ")
-          if jugar_nuevamente != "si":
-              print("Gracias por jugar en el Casino The CoDenants. ¡Hasta la próxima!")
-              break
-```
-En estas lineas se cierra por asi decirlo el bucle while, dando una opcion al jugador de si desea continuar jugando o si ya perdio lo suficiente. 
-#### - Cierre
+                matriz = []
+                for _ in range(3):
+                    fila = []
+                    for _ in range(3):
+                        fila.append(random.choice(simbolos))
+                    matriz.append(fila)
 
-```pseudocode
-if __name__ == "__main__": 
+                for fila in matriz:
+                    print(" | ".join(fila))
+
+                time.sleep(1)
+                resultado = matriz[1]  # Tomamos la fila del medio como la que define si gano o no
+                print("Resultado: " + ' | '.join(resultado))
+
+                # Lineas de ganancia de tragamonedas
+                if len(set(resultado)) == 1:
+                    print("¡Felicidades! Obtuvo tres iguales. Gano 10 veces tu apuesta.")
+                    return dinero * 10
+                elif len(set(resultado)) == 2:
+                    print("¡Casi! Dos iguales. Gano el doble de tu apuesta.")
+                    return dinero * 2
+                else:
+                    print("Lo siento, no gano en vertical.")
+                    return 0
+
+                # comprobacion de que la columna del medio tiene iguales
+                columna_medio = []
+                for i in range(3):
+                    columna_medio.append(matriz[i][1])
+                if len(set(columna_medio)) == 1:
+                    print("¡Felicidades! Obtuviste tres iguales en la columna del medio. Ganaste 1.5 veces tu apuesta.")
+                    ganancia += dinero * 1.5 # ganancia dada en caso de que si sean iguales
+            #lineas de impresion de ganancia correspondiente
+            ganancia = tragamonedas(dinero)
+            print("Ganancia total: $" +str(ganancia)) # ganancia total
+        #lineas que permiten al jugador continuar jugando o salirse del programa
+        jugar_nuevamente = input("¿Quieres jugar otra vez? (sí/no): ")
+        if jugar_nuevamente != "si":
+            print("Gracias por jugar en el Casino The CoDenants. ¡Hasta la próxima!")
+            break
+
+if __name__ == "__main__":
     casino()
 ```
 Una vez dadas las condiciones, se ejecuta el programa.
