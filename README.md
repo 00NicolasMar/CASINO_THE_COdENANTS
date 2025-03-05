@@ -208,8 +208,7 @@ Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.goo
 
  - Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
 ## 5. ¿Cómo funciona el programa?
-##### A continuacion haremos una explicacion paso a paso del codigo, para que el entendimiento de su funcionamiento sea claro.
-#### - Import y Definir función principal
+### A continuacion haremos una explicacion paso a paso del codigo, para que el entendimiento de su funcionamiento sea claro.
 
 ```pseudocode
 import random
