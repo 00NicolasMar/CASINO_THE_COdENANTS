@@ -61,8 +61,10 @@ Seguido a esto, se procedio con el planteamiento de su funcionamiento por medio 
 A continuacion presentamos el diagrama:
 
 ```mermaid
- flowchart TD
+  flowchart TD
     Inicio(Inicio) -->FM[Función Main] -->
+    IMPR[import random]-->
+    IMPT[import time]-->
     Q[ganancias = 0] -->
     R[condiciones_totales = 0] -->
     S[Condiciones_acertadas = 0]-->
@@ -75,7 +77,7 @@ A continuacion presentamos el diagrama:
     C -->|No|WH[input: Selecciona el juego que deseas jugar: ruleta 'r' o tragamonedas 't':]
     WH -->E[While True:]
     E -->F{juegos == r}
-    F -->G{juegos == t}
+    F -->|no|G{juegos == t}
     G -->H[función tragamonedas]
     H -->TA["print(🎰 Juego Tragamonedas 🎰)"]
     TA-->TB["print(juganado)"]
@@ -112,23 +114,50 @@ A continuacion presentamos el diagrama:
     -->TAG["print('Ganancia total: $' +str(ganancia))"]
     -->AW
     G -->|Else|GA["print(Opción de juego no válida. Por favor, elige 'Casino' o 'nose'.)"]
-    F -->Efe["color_apuesta = input(Un color entre rojo, negro, verde o ninguno:)"]
-    Efe -->J{"color_apuesta  not in [rojo, negro, verde, ninguno]"}
-    J -->K[Ingrese una opción válida]
-    K -->J
-    J -->Co(Continue)
-    Co -->Ele["numero_par = input(Selecciona si tu número será 'par', 'impar' o 'ninguno':"]
-    Ele -->Ola{"numero_par not in ['par', 'impar', 'ninguno']:"}
-    Ola -->Wao["print( Opción no válida. Por favor, elige entre 'par', 'impar' o 'ninguno'.)"]
-    Wao -->con(Continue)
-    con -->L{número_ruleta == 0}
-    L -->|Sí|M[verde]
-    L -->Ene{2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35}
-    Ene -->|Sí|N[negro]
-    Ene -->|Else|O[rojo]
-    M --> P
-    N --> P
-    O --> P[print: resultado del número y color]-->
+    F -->|sí|Rul[ruleta]
+    Rul --> RA[imprimir numeros]
+    -->R0["0['#', 3, 6, 9, ..., 36]"]
+    -->R1["1[ 0 , 2, 5, 8, ..., 35]"]
+    -->R2["2['#', 1, 4, 7, ..., 34]"]
+    -->RB["numeros_ruleta = [0, 1, 2]"]
+    -->RC["for i in range(len(números_ruleta)):"]
+    -->RD["for i in range(len(numeros_ruleta[i])):"]-->RC
+    RD-->RE{"numeros_ruleta[i][j] == cambiar_num:"}
+    -->|no|RD
+    -->|sí|RF["numeros_ruleta[i][j] = ❌"]-->RD
+    -->RG[for fila in numeros_ruleta:]
+    -->RH["print(' '.join(map(str,fila)))"]-->RG
+    -->RI["color_apuesta = input(Un color entre rojo (r), negro (n), verde (v) o ninguno (x):)"]
+    RI -->J["while color_apuesta not in [r, n, v, x]"]
+    J -->K["print(Ese color no está en la ruleta. Intenta de nuevo.)"]
+    -->RL["color_apuesta = input(Un color entre rojo (r), negro (n), verde (v) o ninguno (x):)"]-->J
+    -->RJ["numero_par = input(Selecciona si tu número será par (p), impar (i) o ninguno (x): )"]
+    -->RM["while numero_par not in [p, i, x]"]
+    -->RN["print(Opción inválida. Intenta de nuevo.)"]
+    -->RO["numero_par = input(Selecciona si tu número será par (p), impar (i) o ninguno (x): )"]-->RM
+    -->RP["numero_elegido = input(Escoge un número entre 0 y 36 o ninguno (x))"]
+    -->RQ{numero_elegido != 'x'}-->|no|RAA
+    RQ-->|sí|RS[while True:]
+    -->RT{"try: numero_elegido = int(numero_elegido)"}
+    -->|sirve|RU{0 <= numero_elegido <= 36}-->RV
+    RU-->|sí|RX[break]-->RAA
+    RV["print(Número fuera de rango. Intenta de nuevo.)"]-->RW
+    RT-->|error|RY
+    RW["numero_elegido = input(Escoge un número entre 0 y 36 o ninguno (x))"]-->RS
+    RY["print(Entrada inválida. Intenta de nuevo.)"]
+    -->RZ["numero_elegido = input(Escoge un número entre 0 y 36 o ninguno (x))"]-->RS
+    RAA["print(Girando la ruleta...)"]-->
+    RAB["for _ in range(10)"]-->
+    RAC["print(Números girando:  + str(random.randint(0, 36)), end='\r')"]-->
+    RAD["time.sleep(0.3)"]-->RAB
+    RAB-->RAE["numero_ruleta = random.randint(0, 36)"]
+    -->RAF["imprimir_ruleta(numero_ruleta)"]
+    -->RAG{numero_ruleta == 0:}
+    -->|sí|RAH[color_ruleta = 'verde']
+    RAG-->|no|RAI{"numero_ruleta in [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35]:"}
+    -->|sí|RAJ[color_ruleta = 'negro']
+    RAI-->|no|RAK['rojo']-->
+    RAL["print('La ruleta cayó en el número ' + str(numero_ruleta) + ' ' + str(color_ruleta)"]-->
     T[color_apuesta = input: color] -->
     U{color_apuesta != ninguno} -->
     V[condiciones_totales += 1] -->
@@ -158,8 +187,8 @@ A continuacion presentamos el diagrama:
     AU[Print : Dinero Ingresado]-->
     AV[Print : Ganancia Total]-->
     AW[jugar_nuevamente = input ¿quieres volver a jugar?]-->
-    AX{jugar_nuevamente != sí}-->|Dijo que sí|F
-    AX -->|Dió otra respuesta|Fin(Break : Fin)
+    AX{jugar_nuevamente != 'si'}-->WH
+    AX -->Fin(Break : Fin)
  ```
 ### ¿Qué herramientas o recursos se emplearon en el desarrollo?
 
