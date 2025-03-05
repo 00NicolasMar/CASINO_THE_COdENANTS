@@ -49,6 +49,10 @@ Esta página web nos ayudó a comprender el funcionamiento de diversos tipos de 
 
 Este video nos sirvio para aprender a usar las palabras reservadas try, except y finally, las cuales nos funcionaron para que a la hora de ingresar en el input un dato diferente a un entero o al el dato que se solicite en el input, no nos de un error, si no que en cambio nos de un print indicando que el valor ingresado es invalido o algo por el estilo.
 
+#### 4. https://www.youtube.com/watch?v=tU50HfCd4XQ&t=721s  y  https://www.youtube.com/shorts/aFgA4s6bhQM
+
+Estos videos presentan una guia basica del como podriamos desarrollar el programa para simular la máquina tragamonedas.
+
 ## 3. Metodología
 ### ¿Qué métodos utilizamos para desarrollar el proyecto?
 Para el desarrollo del proyecto se inicio primero entendiendo como funcionaria el juego principal del casino y cual seria. Determinando de forma unanime que estaria bien hacer hacer una ruleta de casino. 
