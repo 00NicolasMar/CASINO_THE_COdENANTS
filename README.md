@@ -244,7 +244,7 @@ En este apartado se establece la opcion de escoger un numero que este dentro del
               numero_ruleta = random.randint(0, 36)
 ```
 Aqui se hace la simulacion del giro de la ruleta, utilizando el `import random` y `import time`, haciendo primero un print que simule el girando la ruleta...., luego estableciendo que haga un conteo de 10 numeros (cado uno durando 0.5seg), y que al final de como resultado el numero seleccionado de manera aleatoria, numero el cual sera el que cayo en la ruleta. (dicho numero estara en el rango 0, 36).
-#### - Establecer color a cada numero
+#### - Establecer color a cada número.
 
 ```pseudocode
 	    if numero_ruleta == 0:
@@ -255,13 +255,13 @@ Aqui se hace la simulacion del giro de la ruleta, utilizando el `import random` 
               color_ruleta = "rojo"
 ```
 En este apartado se establecen condiciones que determinaran el color a cada numero, el 0 siendo el unico verde, y por medio de una lista establecer que los numeros  [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35] son de color negro, dejando asi a los numero que no sean pertenecientes a la lista anterior ni 0 como numeros rojos.
-#### - Numero Ganador
+#### - Número Ganador.
 
 ```pseudocode
 print("La ruleta cayó en el número " + str(numero_ruleta)+ " " + str(color_ruleta))
 ```
 Esta linea hace una impresion del numero que cayo en la ruleta y tambien a que color pertenece.
-#### - Apuestas combinadas
+#### - Apuestas combinadas.
 
 ```pseudocode
 ganancia = 0
@@ -310,7 +310,7 @@ Estas lineas son las encargadas de determinar las ganancias por medio de las con
             print("Ganancia total: $" + str(ganancia))
 ```
 En estas lineas se establece que cada apuesta hecha tiene que corresponder a las apuestas acertadas, con el fin de que la ganancia sea acorde a lo que se apostó, y tambien determinando que si de las apuestas que hizo fallo al menos 1, pierde todo su dinero, haciendo una impresion de lo que tenia vs lo que gano o perdio segun sea el caso.
-#### - Seleccion de otro juego 
+#### - Seleccion de la maquina tragamonedas.
 
 ```pseudocode
           elif juegos == "nose":
@@ -318,7 +318,7 @@ En estas lineas se establece que cada apuesta hecha tiene que corresponder a las
           else:
             print("Opción de juego no válida. Por favor, elige 'ruleta' o 'nose'."
 ```
-En estas lineas se establece el caso en el cual el jugador en vez de jugar ruleta selecciona otro juego, o algo diferente a las opciones.
+En estas lineas se establece el caso donde el jugador desea jugar la máquina tragamonedas.
 #### - ¿Deseas continuar jugando? 
 
 ```pseudocode
