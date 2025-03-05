@@ -204,7 +204,7 @@ Para su desarrollo utilizamos la herramienta web Google Colab: https://colab.goo
 
 ![image](https://github.com/user-attachments/assets/45f1bbf3-d57d-4209-a967-3bc6be5f8449)
 
- - Adicionalmente utilizamos la página de Unicode para los emopjis de la maquina tragamonedas :) .
+ - Adicionalmente utilizamos la página de Unicode para los emojis de la maquina tragamonedas :) .
 
  - Tambien utilizamos el programa Visual Studio Code. Ya que gracias a este logramos probar el programa y comprobar nuevamente el funcionamiento del codigo.
 ## 5. ¿Cómo funciona el programa?
