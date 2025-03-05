@@ -345,13 +345,3 @@ Otro problema que tuvimos, fue el hecho de que si el jugador ingresaba un numero
 Este proyecto nos permitió aplicar y reforzar los conociomientos adquiridos durante el curso. Logramos demostrar de forma práctica la relacion que pueden tener dichas herramientas en situaciones cotidianas como lo pueden ser los juegos, ya sean o no de azar, seguramente se puedan desarrollar diversos casos sobre el contexto del mundo real con las herramientas que utilizamos, el trabajo en equipo fue determinante para ello, como grupo, quedamos satisfechos con el desarrollo de este proyecto.
 
 # Como dijo el doctor, Parto con dolor, o apliquemos la de la pelicula de interestelar, la unica manera de que los humanos descubran como llegar a alguna parte, es dejando algo atras...........
-
-Como 
-
-
-
-
-
-
-
-
