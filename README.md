@@ -24,7 +24,7 @@ El hecho de que existan estas opciones de apuesta no implica que sea necesario s
 #### Si no acerta alguna de las opciones seleccionadas, el jugador pierde el dinero apostado. 
 ### Herrmientas vistas en el curso que se ultilizaron en el codigo: Bucles, listas, condicionales y funciones.
 # RiquezaDelCovenant
-Este juego es una maquina tragamonedas que muestra en un recuadro de 3x3, donde pueden salir simbolos aleatorios en cada casilla.
+Este juego es una maquina tragamonedas que muestra en un recuadro de 3 filas y 3 columnas donde salen simbolos aleatorios en cada casilla.
 ### Reglas de ganancia
  - Si coincide el mismo simbolo en 3 casillas seguidas, gana **X10** en base al valor apostado.
  - Si coincide el mismo simbolo en 2 casillas seguidas, gana **X2** en base al dinero apostado.
